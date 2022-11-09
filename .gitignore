@@ -1,4 +1,4 @@
-cheMLearning/__pycache__/
+#cheMLearning/__pycache__/
 *.ipynb*
 *.csv
 .vscode/
