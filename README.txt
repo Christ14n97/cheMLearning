@@ -1,5 +1,5 @@
-Chemometrics library provides of high-level, user-friendly tools to perform rutinal chemometrics analysis in untargeted metabolomics.
-Modelling is done using scikit-learn framework, while visualizations are mainly done with Plotly.
+cheMLearning library provides of high-level, user-friendly tools to perform rutinal chemometrics analysis in untargeted metabolomics.
+Modelling is done using scikit-learn framework, for machine learning; while visualizations are mainly done with Plotly.
 
 Main modules are: 
 - unsupervised_modelling 
@@ -7,6 +7,7 @@ Main modules are:
 - utils
 
 # unsupervised_modelling
+========================
 
 Unsupervised class works around Principal Component Analysis, facilitating the visualization of score and loading plots. Moreover, Hierarchical Clustering Analysis can be called on the 
 principal components and visualize a score plot where the color code is given by the clusters of the HCA.
@@ -14,6 +15,7 @@ principal components and visualize a score plot where the color code is given by
 Visulizations can be obtained without having to manipulate scores or loadings. However, if one would like to access to this outputs, they can be access via class modules.
 
 # supervised_modelling
+======================
 
 Supervised class includes Partial Least Squares and Random Forest which can be used for either regression or classification tasks. PLS is computed with the NIPALS algorithm.
 
@@ -25,6 +27,7 @@ For RF modelling, it can be computad the distance matrix for a RF-classifier mod
 Analytical tools for classifiers are also provided by facilitating a classification report.
 
 # utils
+=======
 
 Here, tools to create confusion matrices and ROC curves are provided.
 In case one is working with MetaboRank (MR) tool, a funtion to read MR's output is provided.
