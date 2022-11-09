@@ -10,7 +10,7 @@ import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
 
 
-class unsupervised():
+class unsupervised_class():
     """
     Unsupervised class provides high-level tools commonly applied in unsupervised multivariate analysis on untargeted metabolomics.
     The idea is providing of simple tools to carry out chemometrics analysis in Python with short amount of code. Outputs can be accessed 

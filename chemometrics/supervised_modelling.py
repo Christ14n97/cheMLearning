@@ -10,7 +10,7 @@ from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import LeaveOneOut
 
 
-class Supervised():
+class supervised_class():
 
     def __init__(self):
         self.pls_scores = None
