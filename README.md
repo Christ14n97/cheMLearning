@@ -60,3 +60,9 @@ In case one is working with MetaboRank (MR) tool, a function to read MR's output
 from cheMLearning import utils
 ```
 
+Change Log
+==========
+
+0.0.1 (09/11/2022)
+------------------
+- First Release
