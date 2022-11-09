@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
 
 classifiers = [
+    'Development Status :: 4 - Beta',
     'Intended Audience :: Education',
-    'Operating System :: Linux :: Ubuntu :: Kerner 5.15.0-52-generic',
+    'Operating System :: POSIX :: Linux',
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3'
 ]
