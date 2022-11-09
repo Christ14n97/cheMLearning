@@ -1,0 +1,5 @@
+cheMLearning/__pycache__/
+*.ipynb*
+*.csv
+.vscode/
+*code-workspace
