@@ -15,7 +15,7 @@ setup(
     version='0.0.1',
     description='Tools for Metabolomics Multivariate Analysis',
     long_description=long_desciption,
-    url='',
+    url='https://github.com/Christ14n97/cheMLearning',
     author='Christian Peralta',
     author_email='christian_94_97@hotmail.com',
     license='MIT',
