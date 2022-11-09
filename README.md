@@ -1,4 +1,4 @@
-**cheMLearning** library provides of high-level, user-friendly tools to perform rutinal chemometrics analysis in untargeted metabolomics.
+**cheMLearning** library provides of high-level, user-friendly tools to perform common chemometrics analysis in untargeted metabolomics.
 Modelling is done using scikit-learn framework, for machine learning; while visualizations are mainly done with Plotly.
 
 Main modules are: 
@@ -6,7 +6,7 @@ Main modules are:
 - supervised_modelling
 - utils
 
-## Instalation
+## Installation
 
 ```python
 pip install cheMLearning
@@ -37,7 +37,7 @@ from cheMLearning.unsupervised_modelling import unsupervised_class
 Supervised class includes `Partial Least Squares` and `Random Forest` which can be used for either regression or classification tasks. PLS is computed with the NIPALS algorithm.
 
 In the PLS modelling, tools to compute goodness metrics, i.e. R² and Q², VIPs, are provided. In addition to a static functions to ease feature extraction VIP for a 
-given VIP treshold.
+given VIP threshold.
 
 For RF modelling, it can be computed the distance matrix for a RF-classifier model. It allows tracking where the observations land in the forest.
 

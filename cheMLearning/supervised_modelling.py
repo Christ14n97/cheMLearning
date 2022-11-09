@@ -118,7 +118,7 @@ class supervised_class():
                              y_variable: pd.Series or np.array,
                              n_models: int,
                              vip_metrics=False,
-                             treshold=None,
+                             threshold=None,
                              n_jobs=None):
         """
         PLS_goodness_metrics method compute R2 and Q2 for nested PLS models; each time including one more LV until the maximun number of LV is reached.
@@ -128,8 +128,8 @@ class supervised_class():
         X: data frame or numpy array containing the variables of interest.
         y_variable: either a dummy matrix or a continuous vector for the variable response.
         n_models: must be the number of latent variables the original PLS computed.
-        treshold: int, VIP treshold value.
-        vip_metrics: booler, to either compute or not the goodness metrics for each model at each VIP treshold.
+        threshold: int, VIP threshold value.
+        vip_metrics: booler, to either compute or not the goodness metrics for each model at each VIP threshold.
         n_jobs: int, number of cores to use for the job.
 
         Returns:
@@ -163,9 +163,9 @@ class supervised_class():
                 self.r2_nested.append(r2)
                 self.q2_nested.append(q2)
             else:
-                r2_vip_metrics[f'r2_tr_{treshold}_LVs_{i+1}'] = r2
-                q2_vip_metrics[f'q2_tr_{treshold}_LVs_{i+1}'] = q2
-                vip_betas[f'beta_coef_tr_{treshold}_LVs_{i+1}'] = pls_model.coef_
+                r2_vip_metrics[f'r2_tr_{threshold}_LVs_{i+1}'] = r2
+                q2_vip_metrics[f'q2_tr_{threshold}_LVs_{i+1}'] = q2
+                vip_betas[f'beta_coef_tr_{threshold}_LVs_{i+1}'] = pls_model.coef_
         if vip_metrics:
             return [r2_vip_metrics, q2_vip_metrics, vip_betas]
 
@@ -241,7 +241,7 @@ class supervised_class():
     @staticmethod
     def VIP_subset(vips, threshold, X):
         """
-        Performs df extraction from original df according to the treshold value passed.
+        Performs df extraction from original df according to the threshold value passed.
 
         Parameter
         --------
